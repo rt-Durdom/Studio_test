@@ -49,14 +49,14 @@ class Player(Base):
     def add_boost(self, session, boost, choice_adder='manual'):
         """Добавить буст игроку."""
 
-        association = PlayerBoostTable(
+        boost_obj = PlayerBoostTable(
             player=self,
             boost=boost,
             choice_adder=choice_adder
         )
-        session.add(association)
+        session.add(boost_obj)
         session.commit()
-        return association
+        return boost_obj
 
     def __repr__(self):
         return f"<Player(user_id={self.user_id}, score={self.total_score})>"
