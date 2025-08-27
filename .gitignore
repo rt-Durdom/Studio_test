@@ -1,0 +1,54 @@
+# Виртуальное окружение
+venv/
+env/
+.venv/
+ENV/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Конфиги и временные файлы IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Логи
+*.log
+
+# Скомпилированные/временные файлы
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+# Кэш тестов
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# Статические файлы и медиа (если не хранятся в репо)
+staticfiles/
+media/
+
+# Секретные данные (например, env-файлы)
+.env
+*.env
+
+# Docker
+*.pid
+*.seed
+*.bak
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Mac/Windows служебные
+.DS_Store
+Thumbs.db
