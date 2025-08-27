@@ -82,7 +82,7 @@ def export_prizes_direct_csv(filepath="player_prizes.csv"):
                 "player_id": obj.player.player_id,
                 "level": obj.level.title,
                 "prize": obj.prize.title,
-                "received": obj.received.isoformat() if obj.received else ""
+                "received": obj.receiving_prize.isoformat() if obj.receiving_prize else ""
             })
 
 
@@ -102,5 +102,5 @@ def export_prizes_chunked_csv(
                 "player_id": obj.player.player_id,
                 "level": obj.level.title,
                 "prize": obj.prize.title,
-                "received": obj.received.isoformat() if obj.received else ""
+                "received": obj.receiving_prize.isoformat() if obj.receiving_prize else ""
             })
